@@ -19,7 +19,7 @@ get_header(); ?>
 			$show_author = get_theme_mod( 'reyl_pro_blog_show_author', true );
 			if ( $show_author || isset( $_GET[ 'show_author' ] ) ) {
 			?>
-			<h3 class="about-author-title"><?php esc_html_e( 'About the Author', 'reyl-pro' ); ?></h3>
+<!--			<h3 class="about-author-title">--><?php //esc_html_e( 'About the Author', 'reyl-pro' ); ?><!--</h3>-->
 			<div class="about-author">
 				
 				<div class="row">
