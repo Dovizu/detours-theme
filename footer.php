@@ -89,17 +89,12 @@
 	<div class="sub-footer">
         <div class="container">
             <div class="row">
-
-                <div class="col-md-5">
+                <div class="col-xs-12 text-center">
                     <p>
 <!--                        --><?php //esc_html_e( '&copy;', 'reyl-pro' ); echo ' 2015-' . date('Y') . ' ' . get_bloginfo( 'name' );  ?><!--.-->
                         <?php esc_html_e( '&copy;', 'reyl-pro' ); echo ' 2015-' . date('Y') . ' ' . 'Donny Reynolds';  ?>.
                     </p>
                 </div>
-                <div class="col-md-7">
-                    <?php get_template_part( '/template-parts/social-menu', 'footer' ); ?>
-                </div>
-
             </div><!-- .row -->
         </div><!-- .container -->
     </div><!-- .sub-footer -->
