@@ -92,7 +92,7 @@
 
                 <div class="col-md-5">
                     <p>
-                    <?php esc_html_e( '&copy;', 'reyl-pro' ); echo ' ' . date('Y') . ' ' . get_bloginfo( 'name' );  ?>. <?php esc_html_e( 'Designed by ', 'reyl-pro' ); ?>.
+                    <?php esc_html_e( '&copy;', 'reyl-pro' ); echo ' ' . date('Y') . ' ' . get_bloginfo( 'name' );  ?>.
                     </p>
                 </div>
                 <div class="col-md-7">
