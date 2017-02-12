@@ -24,10 +24,8 @@ body {
   }
 
   h1, h2, h3, h4, h5, h6 {
-    margin-top: 45px;
     font-weight: 700;
     @media (max-width: $medium) {
-      margin-top: 32px;
       font-weight: 700;
     }
   }
@@ -104,6 +102,14 @@ body {
 
     article {
       line-height: 1.58;
+      .entry-content {
+        h1, h2, h3, h4, h5, h6 {
+          margin-top: 45px;
+          @media (max-width: $medium) {
+            margin-top: 32px;
+          }
+        }
+      }
 
       .metadata {
         .meta_comments {
