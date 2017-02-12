@@ -1,0 +1,125 @@
+$off-black: #616161;
+$medium: 1345px;
+$small: 768px;
+$link-color: #1793ff;
+
+$h1-fontsize: 2.6rem;
+$h2-fontsize: 2.2rem;
+$h3-fontsize: 1.8rem;
+$h4-fontsize: 1.4rem;
+$h5-fontsize: 1.2rem;
+$h6-fontsize: 1rem;
+
+body {
+  color: $off-black;
+
+  a.read-more {
+    &:after {
+      transition: none;
+      display: none;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 45px;
+    font-weight: 700;
+    @media (max-width: $medium) {
+      margin-top: 32px;
+      font-weight: 700;
+    }
+  }
+
+  h1 {
+    font-size: $h1-fontsize;
+    @media (max-width: $small) {
+      font-size: $h2-fontsize;
+    }
+  }
+  h2 {
+    font-size: $h2-fontsize;
+    @media (max-width: $small) {
+      font-size: $h3-fontsize;
+    }
+  }
+  h3 {
+    font-size: $h3-fontsize;
+    @media (max-width: $small) {
+      font-size: $h4-fontsize;
+    }
+  }
+  h4 {
+    font-size: $h4-fontsize;
+    @media (max-width: $small) {
+      font-size: $h5-fontsize;
+    }
+  }
+  h5 {
+    font-size: $h5-fontsize;
+    @media (max-width: $small) {
+      font-size: $h6-fontsize;
+    }
+  }
+  h6 {
+    font-size: $h6-fontsize;
+  }
+
+  p {
+    margin-top: 8px;
+  }
+
+  #header {
+    margin-bottom: 1.125rem;
+
+    .logo_container {
+      .site-title {
+        margin-top: 0;
+        @media (max-width: $medium) {
+          margin-top: 45px;
+        }
+        @media (max-width: $small) {
+          margin-top: 6px;
+        }
+      }
+    }
+
+    nav.jqueryslidemenu {
+      margin-bottom: 0;
+    }
+
+    #primary-menu {
+      .dropdown-menu {
+        margin-bottom: 18px;
+      }
+    }
+  }
+
+  #main {
+    max-width: 700px;
+    @media (max-width: $medium) {
+      margin: 0 auto;
+    }
+
+    article {
+      line-height: 1.58;
+
+      .metadata {
+        .meta_comments {
+          display: none;
+        }
+        text-align: left;
+      }
+      .entry-header {
+        .post-title {
+          text-align: left;
+          font-size: 2.625rem;
+          @media (max-width: $small) {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
