@@ -127,5 +127,15 @@ body {
         }
       }
     }
+
+    @media (max-width: $small) {
+      .about-author {
+        text-align: center;
+        .avatar {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
   }
 }
