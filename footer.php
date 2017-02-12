@@ -92,7 +92,8 @@
 
                 <div class="col-md-5">
                     <p>
-                    <?php esc_html_e( '&copy;', 'reyl-pro' ); echo ' ' . date('Y') . ' ' . get_bloginfo( 'name' );  ?>.
+<!--                        --><?php //esc_html_e( '&copy;', 'reyl-pro' ); echo ' 2015-' . date('Y') . ' ' . get_bloginfo( 'name' );  ?><!--.-->
+                        <?php esc_html_e( '&copy;', 'reyl-pro' ); echo ' 2015-' . date('Y') . ' ' . 'Donny Reynolds';  ?>.
                     </p>
                 </div>
                 <div class="col-md-7">
