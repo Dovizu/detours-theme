@@ -1,7 +1,9 @@
 $off-black: #616161;
 $medium: 1345px;
 $small: 767px;
-$link-color: #1793ff;
+$link-color: #15618e;
+$color-primary: #800817;
+$color-secondary: #ce8313;
 
 $h1-fontsize: 2.3rem;
 $h2-fontsize: 2.0rem;
@@ -13,13 +15,20 @@ $h6-fontsize: 1.0rem;
 body {
   color: $off-black;
 
-  a.read-more {
-    &:after {
-      transition: none;
-      display: none;
-    }
-    &:hover {
-      text-decoration: underline;
+  a {
+    color: $link-color;
+    &.read-more {
+      color: $link-color;
+      &:after {
+        transition: none;
+        display: none;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+      > i {
+        color: $link-color;
+      }
     }
   }
 
@@ -131,6 +140,15 @@ body {
           display: none;
         }
         text-align: left;
+
+        ul li {
+          &.meta_categories a {
+            color: #800817;
+          }
+          &.meta_tags a {
+            color: #ce8313;
+          }
+        }
       }
       .entry-header {
         .post-title {
