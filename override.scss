@@ -3,12 +3,12 @@ $medium: 1345px;
 $small: 767px;
 $link-color: #1793ff;
 
-$h1-fontsize: 2.6rem;
-$h2-fontsize: 2.2rem;
-$h3-fontsize: 1.8rem;
+$h1-fontsize: 2.3rem;
+$h2-fontsize: 2.0rem;
+$h3-fontsize: 1.7rem;
 $h4-fontsize: 1.4rem;
-$h5-fontsize: 1.2rem;
-$h6-fontsize: 1rem;
+$h5-fontsize: 1.1rem;
+$h6-fontsize: 1.0rem;
 
 body {
   color: $off-black;
@@ -135,9 +135,9 @@ body {
       .entry-header {
         .post-title {
           text-align: left;
-          font-size: 2.625rem;
+          font-size: $h1-fontsize;
           @media (max-width: $small) {
-            font-size: 2rem;
+            font-size: $h2-fontsize;
           }
         }
       }
