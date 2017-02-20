@@ -9,16 +9,21 @@ jQuery(document).ready(function($) {
 	$("body").on('click', 'article a[href^="'+window.location.origin+'"]:not(.ql_thumbnail_hover)', function(event) {
 		event.preventDefault();
 		/* Act on the event */
-		$(".ql-animations #main article").each(function(index, el) {
-			$(el).addClass('ql_clicked');
-		});
-		$(".ql-animations #sidebar .widget").each(function(index, el) {
-			$(el).addClass('ql_clicked');
-		});
-		var target = $(this).attr('href');
-		 setTimeout(function() {
-	       window.location.href = target;
-	    }, 600);
+
+		if ( $(this).parents('div[data-carousel-extra]').length == 0 ) { //avoid conflict with Jetpack carousel lightbox
+		
+			$(".ql-animations #main article").each(function(index, el) {
+				$(el).addClass('ql_clicked');
+			});
+			$(".ql-animations #sidebar .widget").each(function(index, el) {
+				$(el).addClass('ql_clicked');
+			});
+			var target = $(this).attr('href');
+			
+			 setTimeout(function() {
+		       window.location.href = target;
+		    }, 600);
+		}
 	});
 
 	/*
@@ -71,5 +76,17 @@ jQuery(document).ready(function($) {
 	$('.dropdown-toggle').dropdown();
 
 	$('*[data-toggle="tooltip"]').tooltip();
+
+	/*! Reloads page on back button click, necesary for Safari to work with Back button */
+	window.onpageshow = function(event) {
+        if (event.persisted) {
+            $(".ql-animations #main article").each(function(index, el) {
+				$(el).removeClass('ql_clicked');
+			});
+			$(".ql-animations #sidebar .widget").each(function(index, el) {
+				$(el).removeClass('ql_clicked');
+			});ç
+        };
+    };
 
 });
