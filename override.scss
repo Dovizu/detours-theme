@@ -81,6 +81,15 @@ body {
           margin-top: 6px;
         }
       }
+      .custom-logo {
+        height: 30px;
+        @media (max-width: $medium) {
+          height: 35px;
+        }
+        @media (max-width: $small) {
+          height: 30px;
+        }
+      }
     }
 
     nav.jqueryslidemenu {
